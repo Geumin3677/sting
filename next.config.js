@@ -1,9 +1,6 @@
 const withPWA = require('next-pwa')({
   dest: 'public',
-  // customWorkerDir: 'worker',
-  // register: true,
-  // skipWaiting: true,
-  output: 'export',
+  reactStrictMode: true,
 })
 
-module.exports = withPWA()
+module.exports = withPWA(this.output='export')
