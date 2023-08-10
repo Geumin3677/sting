@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'orbit',
   description: 'orbit',
-  manifest: "/manifest.json",
+  manifest: "/sting/manifest.json",
   themeColor: "#355ef6",
 }
 
