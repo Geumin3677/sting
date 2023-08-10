@@ -15,6 +15,7 @@ module.exports = withPlugins(
 			{
 				pwa: {
 					dest: "public",
+					subdomainPrefix: "/sting"
 				},
 			},
 		],
