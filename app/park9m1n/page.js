@@ -43,7 +43,7 @@ export default function Home() {
         applicationServerKey: process.env.NEXT_PUBLIC_PUBLIC_KEY
       })
       .then(async (subscription) => {
-        const res = await axios.post('http://35.221.213.98:3001/api/sub/park9m1n', {
+        const res = await axios.post('https://geumin.shop:3001/api/sub/park9m1n', {
           data: subscription.toJSON()
         })
         console.log(res.status)
@@ -52,7 +52,7 @@ export default function Home() {
   }
 
   async function getData(){
-    const res = await axios.post('http://35.221.213.98:3001/api/getData', {
+    const res = await axios.post('https://geumin.shop:3001/api/getData', {
       id: "park9m1n"
     })
     if(res.status === 200)
@@ -70,7 +70,7 @@ export default function Home() {
   ).matches
 
   async function sting() {
-    const res = await axios.post('http://35.221.213.98:3001/api/sting/park9m1n')
+    const res = await axios.post('https://geumin.shop:3001/api/sting/park9m1n')
     if(res.status === 200)
     {
       setCnt(cnt + 1)
